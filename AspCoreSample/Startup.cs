@@ -28,7 +28,9 @@ namespace AspCoreSample
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello, Welcome!");
-                await context.Response.WriteAsync("Asp.Net Core Web Application!");
+                await context.Response.WriteAsync("Asp.Net Core Web Application!");//Change 1
+                await context.Response.WriteAsync("Working");
+
             });
         }
     }
